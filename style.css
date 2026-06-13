@@ -149,5 +149,8 @@ header button{
     .arrow{
         width: 0px;
     }
+    .main_text h3{
+        width: 400px;
+    }
     
 }
