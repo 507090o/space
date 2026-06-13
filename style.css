@@ -1,0 +1,153 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+header{
+    background-color: #17191D;
+    gap: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 80px;
+}
+.nasa_img{
+    width: 60px;
+    height: 60px;
+}
+header a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    padding: 10px;
+}
+header button{
+    background-color: #FF342B;
+    color: white;
+    width: 60px;
+    height: 35px;
+    font-size: 16px;
+    border-radius: 4px;
+}
+
+.description{
+    background-color: #0D0F12;
+}
+.main_text h1{
+    color: white;
+    text-align: center;
+    padding-top: 50px;
+    font-size: 40px;
+}
+.main_text h3{
+    color: #C3CDDD;
+    text-align: center;
+    margin: 0 auto;
+    font-weight: 100;
+    font-size: 18px;
+    padding-top: 10px;
+    padding-bottom: 100px;
+    width: 650px;
+    height: 60px;
+}
+
+.recomendations{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 70px;
+}
+.earth_img img{
+    width: 600px;
+    height: auto;
+}
+.row_1, .row_2{
+    display: flex;
+    gap: 70px;
+}
+.shattles, .teleskop, .moon, .medal{
+    align-items: center;
+    text-align: center;
+}
+.shattles img, .teleskop img, .moon img, .medal img{
+    width: 100px;
+    align-items: center;
+}
+.shattles p, .teleskop p, .moon p, .medal p{
+    color: white;
+    font-size: 18px;
+    width: 160px;
+    height: 100px;
+}
+
+.photos{
+    background-color: #1F242C;
+}
+.main_image{
+    padding-top: 30px;
+    text-align: center;
+}
+.main_image img{
+    width: 900px;
+}
+.images_row{
+    display: flex;
+    gap: 20px;
+    text-align: center;
+}
+.images_row img{
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+.arrow{
+    width: 100px;
+    height: 100px;
+}
+.small_image{
+    width: 150px;
+    border-radius: 5px;
+}
+.center_image{
+    width: 150px;
+    border-radius: 5px;
+    border: 2px solid white;
+}
+
+
+@media (max-width: 350px){
+    header a{
+        font-size: 0px;
+    }
+    .recomendations{
+        flex-direction: column-reverse;
+    }
+    .shattles img, .teleskop img, .moon img, .medal img{
+        width: 50px;
+    }
+    .shattles p, .teleskop p, .moon p, .medal p{
+        font-size: 14px;
+    }
+    .row_1, .row_2{
+        gap: 25px;
+    }
+    .earth_img img{
+        width: 300px;
+    }
+    .main_image img{
+        width: 300px;
+    }
+    .small_image, .center_image, .arrow{
+        width: 50px;
+        height: 50px;
+    }
+    .images_row{
+        gap: 10px;
+    }
+    .arrow{
+        width: 0px;
+    }
+    
+}
